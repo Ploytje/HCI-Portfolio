@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/styleNav.css">
+		<link rel="stylesheet" type="text/css" href="css/styleLab.css">
+		<script type="text/javascript" src="javascript/javascriptLabWeek.js"></script>
+		<title>Labweek</title>
+	</head>
+	<body>
+		<nav class="topnav">
+		  <a class="active" href="index.html">Home</a>
+		  <a href="topics.html">Topics</a>
+		  <a href="workshop.html">Workshops</a>
+		  <a href="excursion.html">Excursion</a>
+		  <a href="labWeek.html">Lab week</a>
+		</nav>
+		<span>Lab week</span>
+		<main>
+			<div class="tab">
+				<button class="tablinksLab" onclick="labWeek(event, 'processLab')" id="lab">Process</button>
+				<button class="tablinksLab" onclick="labWeek(event, 'productLab')">Product</button>
+				<button class="tablinksLab" onclick="labWeek(event, 'reflectLab')">Reflect</button>
+			</div>
+
+			<div id="processLab" class="tabcontentLab">
+				<h3>Process</h3>
+				<p>London is the capital city of England.</p>
+			</div>
+
+			<div id="productLab" class="tabcontentLab">
+				<h3>Product</h3>
+				<p>Paris is the capital of France.</p> 
+			</div>
+
+			<div id="reflectLab" class="tabcontentLab">
+				<h3>Reflect</h3>
+				<p>Paris is the capital of France.</p> 
+			</div>
+			
+		</main>
+
+	</body>
+</html>

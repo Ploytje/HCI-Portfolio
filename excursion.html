@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/styleNav.css">
+		<link rel="stylesheet" type="text/css" href="css/styleExcursion.css">
+		<script type="text/javascript" src="javascript/javascriptExcursion.js"></script>
+		
+		<title>Excursion</title>
+	</head>
+	<body>
+		<nav class="topnav">
+		  <a class="active" href="index.html">Home</a>
+		  <a href="topics.html">Topics</a>
+		  <a href="workshop.html">Workshops</a>
+		  <a href="excursion.html">Excursion</a>
+		  <a href="labWeek.html">Lab week</a>
+		</nav>
+		<span>Excursion</span>
+		<main>
+			<div class="tab">
+				<button class="tablinksEx" onclick="excursion(event, 'assignmentsEx')" id="excur">Assignment</button>
+				<button class="tablinksEx" onclick="excursion(event, 'reflectEx')">Reflect</button>
+			</div>
+
+			<div id="assignmentsEx" class="tabcontentEx">
+				<h3>Assignments</h3>
+				<p>London is the capital city of England.</p>
+			</div>
+
+			<div id="reflectEx" class="tabcontentEx">
+				<h3>Reflect</h3>
+				<p>Paris is the capital of France.</p> 
+			</div>
+		</main>
+
+	</body>
+</html>

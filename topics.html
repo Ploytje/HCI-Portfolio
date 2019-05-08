@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/styleNav.css">
+		<link rel="stylesheet" type="text/css" href="css/styleTopic.css">
+		<script type="text/javascript" src="javascript/javascriptTopics.js"></script>
+		<title>Topics</title>
+	</head>
+	<body>
+		<nav class="topnav">
+		  <a class="active" href="index.html">Home</a>
+		  <a href="topics.html">Topics</a>
+		  <a href="workshop.html">Workshops</a>
+		  <a href="excursion.html">Excursion</a>
+		  <a href="labWeek.html">Lab week</a>
+		</nav>
+		<span>Topics</span>
+		<main>
+			<button class="tablinkMenu" onclick="openPage('wearables', this, '#4b78b4')" id="default">Wearables</button>
+			<button class="tablinkMenu" onclick="openPage('playful', this, '#4b78b4')">Playful Interactions</button>
+			<button class="tablinkMenu" onclick="openPage('artificial', this, '#4b78b4')">Artificial Creatures</button>
+			<button class="tablinkMenu" onclick="openPage('ar', this, '#4b78b4')">AR & VR</button>
+
+			<!-- topics -->
+			<artikel id="wearables" class="tabcontentMenu">
+				<h1>Wearables</h1>
+				<div class="tab">
+				  <button class="tablinks2" onclick="openCity(event, 'assignments')" id="open">Assignment</button>
+				  <button class="tablinks2" onclick="openCity(event, 'research')">Research</button>
+				  <button class="tablinks2" onclick="openCity(event, 'reflect')">Reflect</button>
+				</div>
+
+				<div id="assignments" class="tabcontent2">
+				  <h3>Assignments</h3>
+				  <p>London is the capital city of England.</p>
+				</div>
+
+				<div id="research" class="tabcontent2">
+				  <h3>Research</h3>
+				  <p>Paris is the capital of France.</p> 
+				</div>
+
+				<div id="reflect" class="tabcontent2">
+				  <h3>Reflect</h3>
+				  <p>Tokyo is the capital of Japan.</p>
+				</div>
+			    
+			  	
+			</artikel>
+
+			<artikel id="playful" class="tabcontentMenu">
+				<h1>Playful Interaction</h1>
+				<div class="tab">
+				  <button class="tablinks3" onclick="playfulInter(event, 'assignmentsPlay')" id="blijf">Assignment</button>
+				  <button class="tablinks3" onclick="playfulInter(event, 'researchPlay')">Research</button>
+				  <button class="tablinks3" onclick="playfulInter(event, 'reflectPlay')">Reflect</button>
+				</div>
+
+				<div id="assignmentsPlay" class="tabcontent3">
+				  <h3>Assignments</h3>
+				  <p>London is the capital city of England.</p>
+				</div>
+
+				<div id="researchPlay" class="tabcontent3">
+				  <h3>Research</h3>
+				  <p>Paris is the capital of France.</p> 
+				</div>
+
+				<div id="reflectPlay" class="tabcontent3">
+				  <h3>Reflect</h3>
+				  <p>Tokyo is the capital of Japan.</p>
+				</div>
+			  
+			</artikel>
+
+			<artikel id="artificial" class="tabcontentMenu">
+				<h1>Artificial</h1>
+				<div class="tab">
+				  <button class="tablinks4" onclick="artificial(event, 'assignmentsArti')" id="stay">Assignment</button>
+				  <button class="tablinks4" onclick="artificial(event, 'researchArti')">Research</button>
+				  <button class="tablinks4" onclick="artificial(event, 'reflectArti')">Reflect</button>
+				</div>
+
+				<div id="assignmentsArti" class="tabcontent4">
+				  <h3>Assignments</h3>
+				  <p>London is the capital city of England.</p>
+				</div>
+
+				<div id="researchArti" class="tabcontent4">
+				  <h3>Research</h3>
+				  <p>Paris is the capital of France.</p> 
+				</div>
+
+				<div id="reflectArti" class="tabcontent4">
+				  <h3>Reflect</h3>
+				  <p>Tokyo is the capital of Japan.</p>
+				</div>
+			  
+			</artikel>
+
+			<artikel id="ar" class="tabcontentMenu">
+				<h1>AR & VR</h1>
+				<div class="tab">
+				  <button class="tablinks5" onclick="ar(event, 'assignmentsAr')" id="stop">Assignment</button>
+				  <button class="tablinks5" onclick="ar(event, 'researchAr')">Research</button>
+				  <button class="tablinks5" onclick="ar(event, 'reflectAr')">Reflect</button>
+				</div>
+
+				<div id="assignmentsAr" class="tabcontent5">
+				  <h3>Assignments</h3>
+				  <p>London is the capital city of England.</p>
+				</div>
+
+				<div id="researchAr" class="tabcontent5">
+				  <h3>Research</h3>
+				  <p>Paris is the capital of France.</p> 
+				</div>
+
+				<div id="reflectAr" class="tabcontent5">
+				  <h3>Reflect</h3>
+				  <p>Tokyo is the capital of Japan.</p>
+				</div>
+			  
+			</artikel>
+
+		</main>
+	</body>
+</html>
