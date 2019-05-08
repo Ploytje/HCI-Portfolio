@@ -1,4 +1,8 @@
 /* Style tab links */
+body {
+  margin-right: 10%;
+  margin-left: 10%;
+}
 main {
   padding-top: 2%;
 }

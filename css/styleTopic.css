@@ -1,15 +1,17 @@
 * {
   box-sizing: border-box
 }
-/*body {
-  font-family: "Lato", sans-serif;
-}*/
+
+
 
 /* Set height of body and the document to 100% */
 body, html {
   height: 100%;
-  margin: 0;
   font-family: Arial;
+}
+body {
+  margin-right: 10%;
+  margin-left: 10%;
 }
 span {
   text-align: center;
