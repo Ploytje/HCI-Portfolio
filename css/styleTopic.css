@@ -101,10 +101,29 @@ h1 {
   height: 300px;
 }
 
+/*wearable*/
 
+/*research*/
+.tabcontent2 figure img, .tabcontent3 figure img {
+  width: 50%;
+  height: 50%;
+}
+.tabcontent2 figure, .tabcontent3 figure {
+  display: flex;
+}
+.tabcontent2 p, .tabcontent3 p, .tabcontent4 p {
+  margin-bottom: 50px;
+}
+.tabcontent4 figure img {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin: 0 auto;
+}
 
-
-
+.tabcontent2 p, .tabcontent3 p, .tabcontent4 p, .tabcontent5 p {
+  font-size: 14pt;
+}
 
 
 
