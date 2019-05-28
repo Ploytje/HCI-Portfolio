@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box
+}
+
+
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  font-family: Arial;
+}
+body {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+span {
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+  font-size: 24pt;
+  font-weight: bold;
+  color: #4b78b4;
+
+}
+main {
+  padding-top: 2%;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Style tab links */
+.tablinkMenu {
+  background-color: #b0d3f0;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablinkMenu:hover {
+  background-color: #789ac7;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontentMenu {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+
+/*artikel wearables*/
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid white;
+  background-color: white;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #4682b4;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #4682b4;
+}
+
+/* Style the tab content */
+.tabcontent2, .tabcontent3, .tabcontent4, .tabcontent5 {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  height: 300px;
+}
+
+/*wearable*/
+
+/*research*/
+.tabcontent2 figure img, .tabcontent3 figure img {
+  width: 50%;
+  height: 50%;
+}
+.tabcontent2 figure, .tabcontent3 figure {
+  display: flex;
+}
+.tabcontent2 p, .tabcontent3 p, .tabcontent4 p {
+  margin-bottom: 50px;
+}
+.tabcontent4 figure img {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.tabcontent2 p, .tabcontent3 p, .tabcontent4 p, .tabcontent5 p {
+  font-size: 14pt;
+}
+
+
+
+
+
