@@ -46,4 +46,72 @@ figure img {
 }
 .vidAndImg {
   display: flex;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+  /*justify-content: flex-start;*/
 }
+.vidAndImg figure   {
+  width: 40%;
+  margin:0;
+}
+.vid {
+  width: 60%;
+}
+.tekst {
+  width: 100%;
+}
+.assigArti figure img {
+  width: 50%;
+  height: 50%;
+}
+.assigArti figure {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.vidVR {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgVR {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.imgBlue {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+  margin: 0;
+}
+
+.imgBlue img {
+  width: 33%;
+  height: 50%;
+  margin: 0;
+}
+.vrAs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 50px;
+  width: 60%;
+}
+.vrAs img {
+  width: 20%;
+  height: 50%;
+  margin: 0;
+}
+.imgBlueTurn {
+  transform: rotate(90deg);
+}
+.vrVid {
+  margin-top: 50px;
+
+}
+
+
+
+
+

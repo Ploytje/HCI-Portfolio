@@ -33,10 +33,22 @@
 						<figure class="">
 							<img src="images/ex3.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex3_c.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls class="">
+								<source src="images/ex3_c.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							De bedoeling van deze opdracht is om de ene lampje sneller te laten knipperen dan andere lampje. In de video zie je dat de rode lampje sneller knipperen dan het gele lampje. In de afbeelding zie je waar de kabels wordt neergezet.  De kabels zit in de Arduino board (blauw) en aan de breadboard (wit). Daarnaast wordt er gebruik gemaakt van de resistors. 
+							<br>
+							<br>
+							De Ardiono board is een minicomputer die je kunt gebruiken programmeren om de hardware te besturen. Het bord is geprogrammeerd met een USB-kabel. Deze kabel is gebruikt voor een power of het kan van stroom worden voorzien door batterijen. Een breadboard is een hulpmiddelen om een prototype van een elektronische schakeling te maken zonder te solderen. Je steekt de kabels in de gaten om ze met elkaar te verbinden. 
+							<br>
+							<br>
+							Bij de void setup() wordt de namen van de kabels genoemd. We hebben de kabels een naam gegeven. Bij de void loop() is de werking van de lichten. DigitalWrite(nummer, HIGH) geeft aan dat de licht aan moet zijn en digitalWrite(nummer, LOW) geeft aan dat de licht uit moet. De delay() betekent hoe lang het duurt in seconden voor dat de licht aan of uit gaat.
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 4 -->
@@ -46,10 +58,19 @@
 						<figure class="">
 							<img src="images/ex4.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex4_c.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/ex4_c.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							Bij deze opdracht is er twee lampjes te zien die de ene uitgaat terwijl de andere aan gaat. In de video zie je dat het gele lampje langzaam de hand uit gaat en het rode lampje feller wordt. Wanneer het rode lampje op de max aan is dan gaat het gele lampje weer feller worden en tegelijkertijd gaat het rode lampje weer langzaam uitgaat. 
+							<br>
+							<br>
+							Bij de void setup() wordt er de pinMode genoemd. Hierin wordt de naam van de kabels gegeven. Bij de void loop() staat de code voor het aan en uit gaat van de lichten. Deze twee lichten kunnen maar tot 255 licht geven. Om de activiteiten van de lichten steeds opnieuw uit te voeren, is er for-loop() nodig. Met for-loop kan er telkens met andere waarde worden gewerkt. Bij de for-loop() in de tussen haakjes wordt de begin waarde aangegeven en wat er gebeurt als de waarde van het licht onder 256 licht, namelijk de lichten wordt helder. De analogWrite(nummer, brightness) geeft aan dat de licht helder wordt. Bij de analogWrite(nummer, 255-brightness) geeft aan dat de licht minder helder wordt. De wachttijd tussen deze twee activiteit wordt aangegeven bij de functie delay(). 
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 6 -->
@@ -59,10 +80,19 @@
 						<figure class="">
 							<img src="images/ex6.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/exercise6.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/exercise6.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							De bedoeling van deze opdracht is om de lichten te besturen door middel van een potmeter. Een potentiometer of een potmeter is een draaiknop met een variabele weerstand. De pot die wordt gebruik bij deze opdracht heeft een maximale weerstand van 10k. In de video is er twee lampjes en een potmeter te zien. Met behulp van de potmeter gaat de ene lampje langzaam uitgaat terwijl het andere lampje helder wordt. Om deze opdracht te laten werken zijn er een paar kabels bij dat verbonden worden met de Arduino board en de breadboard.
+							<br>
+							<br>
+							Als eerst wordt er waarden gegeven van de gekleurde lichten en de potmeter. Bij de void setup() wordt de potmeter en de lichten genoemd. In de void loop() is dan de werking van de lichten. Je heeft hieraan wordt de potmeter moet doen(sensorValue). Met de functie analogRead(sensorPin) wordt de potmeter vertaal wanneer ik aan het draaien ben. De waarde van de potmeter is 1023 en de lichten is 255. Wanneer ik aan de potmeter gaat de lichten flikkeren om dat er te veel stroom eruit komt. Daarom wordt dit gelijk gemaakt met de functie map(). Bij de functie Serial.printIn() wordt de uitkomsten laten gebeeld. In de analogWrite() wordt aangegeven welke waarde de lichten aan moet gaan als ik aan het draaien ben. 
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 7 -->
@@ -72,10 +102,15 @@
 						<figure class="">
 							<img src="images/ex7.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/exercise7.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/exercise7.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							In de vorige opdracht dimde de licht met behulp van potmeter in deze opdracht wordt er gebruikt gemaakt met andere sensor. De sensor die ik ga gebruiken is LDR (Light Dependent Resistor). Het is een gevoelige weerstand die de hoeveelheid licht meet. Het is te vergeleken met de straatverlichting die aangaat wanneer het donker wordt buiten. In de video zie je wanneer ik met mij vinger op de sensor doe, gaat de ene lamp dimmen en de andere lamp helder worden. Het geldt ook andersom. Wanneer ik met mijn vinger weghaalt, gaat de ene lamp helder en de andere dimmen. De code van deze opdracht lijkt op van die potmeter, omdat die ook hetzelfde werkt. Het enig verschil is dat ik niet aan de potmeter draait maar juist met mij vinger erover heen hover. 
+						</p>
 					</div>
 					<p></p>
 
@@ -87,10 +122,15 @@
 						<figure class="">
 							<img src="images/ex8.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/exercise8.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/exercise8.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							Deze opdracht heeft te maken met de spanningsdeler. De pin (Ardiuno board) van A0 – A5 hebben een spanning tussen 0 en 5V. Dit stroom is om te zetten tussen 0 en 1023 om in de code te kunnen gebruiken. In deze opdracht wil ik met behulp van twee sensoren laten zien hoe de voltage zijn dan verdeelt. De code van deze opdracht is bijna hetzelfde als de vorige opdracht. Ook is de werking bijna hetzelfde. Het verschil tussen deze oefeningen zijn de voltage. In de video zie je dat de ene lamp helder is dan de andere lamp wanneer ik met mijn vinger op de sensor leg. De licht van deze opdracht is minder fel dan de vorige opdracht. Het komt doordat ik twee sensoren heb geplaats. De stroom is dus verdeeld. 
+						</p>
 					</div>
 				</section>
 				<!-- exercise 9 -->
@@ -101,10 +141,19 @@
 							<img src="images/ex9.png">
 							<img src="images/ex9_processing.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex9.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/ex9.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							De bedoeling van deze opdracht is om de sensor waarde te veranderen in een interessante manier te vinden, zoals draaiende vierkant of een vierkant laten bewegen. Er wordt gebruikt gemaakt van de potmeter en de processing samen met de Arduino. Ik heb voor de potmeter gekozen, omdat ik met de potmeter meerdere manier kunnen combineren om iets leuk te maken. Daarom zijn codes zelfde als de opdracht van potmeter. In de video zie je hoe ik het vierkant laten bewegen met de potmeter met behulp van potmeter en de processing.
+							<br>
+							<br>
+							Tot dit moment heeft de Arduino zichzelf laten werken. Na het upload van het programma wordt de Arduino zelfstandig uitgevoerd. Maar voor deze oefening wordt de Arduino en de Processing samen gebruiken. Processing is een opensourcesoftware. Het wordt gebruikt bij de kunstenaars, ontwerpers, studenten en hobbyisten om de fundamenten van het programmeren binnen een visuele context te leren. De Arduino board wordt als invoerapparaat voor de computer gebruikt door een verbinding tot stand te brengen tussen Arduino en Processing. 
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 10 -->
@@ -114,10 +163,19 @@
 						<figure class="">
 							<img src="images/ex10.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex10_f.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/ex10_f.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							Het doel van de opdracht is om het lampje te laten branden door een van de buttons te drukken. Maar niet te gelijke tijd drukken. De buttons worden gekoppeld met de arduino board en de breadboard. In de video is te zien als ik op een van de buttons druk dan gaat de licht branden maar het licht gaat niet branden wanneer ik op de beide buttons druk. 
+							<br>
+							<br>
+							Bij de int gedeelte wordt de buttons en het lampje een naam gegeven. Daarna wordt er bij de void setup() de namen van het lampje en de buttons geroepen. Bij de void loop() wordt de functie if else toegepast. Er staat als de linker en de rechte button niet ingedrukt zijn, gaat de licht niet branden en als beide buttons wel ingedrukt worden, moet de licht ook niet branden. Wel wanneer er een van deze buttons ingedrukt wordt dan moet het lampje branden. 
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 11 -->
@@ -127,10 +185,19 @@
 						<figure class="">
 							<img src="images/ex11.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex11_b.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/ex11_b.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							Wat ik in deze opdracht wil bereiken is om de servomotor te laten werken. Dit gebeurt met behulp van de Arduino en de servomotor. De servomotor is een motor die zeer nauwkeurig kan draaien. De motor kan op een bepaalde positie richten en om die reden worden de servomotor onder andere gebruikt om op afstand bestuurbare auto’s te besturen. De servomotoren kunnen nooit helemaal omdraaien. Het is niet daarvoor geschikt. In de video is de servomotor te zien die naar links en dan naar rechts bewegen. 
+							<br>
+							<br>
+							Het eerste gedeelte van de code wordt de servomotor een naam gegeven. Het geeft aan waar die staat. Bij de void setup() wordt de servomotor aangegeven waar die is verbonden. Daarna wordt bij de void loop() de activiteiten van de servomotor bepaald. De eerste for() bepaald wat er gebeurt als de servomotor onder de 160 draait en bij de tweede for() geeft aan wat de servomotor moet doen als die draait tot 160. 
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 12 -->
@@ -140,10 +207,19 @@
 						<figure class="">
 							<img src="images/ex12.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex12_b.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/ex12_b.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							Ook is het doel van deze opdracht om de servomotor te laten bewegen. Maar in plaats van al van tevoren aan te geven wanneer de servomotor moet draaien, doe ik in deze opdracht handmatig. Doormiddel van twee buttons ga ik de servomotor laten bewegen. De Arduino board is verbonden met de beardboard en de computer. Daarnaast wordt er gebruikt gemaakt van twee buttons en twee weerstanden. In de video zie je als ik op de linker button druk dan gaat de servomotor een stukje naar rechts en wanneer ik op de rechterbutton druk, gaat de servomotor naar links. 
+							<br>
+							<br>
+							De code van deze opdracht is bijna hetzelfde als de vorige opdracht. Wat erbij is gekomen zijn de buttons. De buttons worden als eerst de naam gegeven. Daarna worden de buttons genoemd bij de void setup(). Bij de void loop() wordt er gebruikt gemaakt van while(). De while() functie bepaalt een reeks herhalingen. De while structuur voert continu een reeks instructies uit terwijl de expressie waar is. Wat er bij staat is dat wanneer er op de linker button en op de rechterbutton gedrukt worden, gebeurt er iets met de servomotor. 
+
+						</p>
 					</div>
 				</section>
 				<!-- exercise 13 -->
@@ -153,27 +229,173 @@
 						<figure class="">
 							<img src="images/ex13.png">
 						</figure>
-						<video width="320" height="240" controls>
-							<source src="images/ex13_b.mp4" type="video/mp4">
-							Your browser does not support the video tag.	
-						</video>
+						<div class="vid">
+							<video width="320" height="240" controls>
+								<source src="images/ex13_b.mp4" type="video/mp4">
+								Your browser does not support the video tag.	
+							</video>
+						</div>
+						<p class="tekst">
+							Het doel van deze opdracht is om een leuke melodie te maken. Er wordt gebruikt gemaakt van piezo speaker, arduino board, een weerstand en de breadboard. Met de piezo speaker kunnen er geluid gemaakt worden. In de video heb ik een leuke melodie laten draaien. Deze melodie heb ik zelf bedacht. In de tone() wordt de melodie gekozen en daarna hoe hard de melodie moet zijn. In dit geval is het volume van deze speaker 200ms. De delay() geeft aan hoe lang het duurt voordat de volgende melodie wordt er gespeeld. 
+						</p>
 					</div>
 				</section>
 				
 			</artikel>
 
 			<artikel id="vr" class="tabcontentMenu">
-				<h1>Assignment</h1>
-				<figure class="">
-					
-				</figure>
+				<h2>Workshop Spatial Augmented Reality</h2>
+				<p>Spatial Augmented Reality (SAR) of Projection Mapping maakt gebruik van alledaagse videoprojectoren maar in plaats van projecteren op een flat screen, wordt licht op elke oppervlak in kaart gebracht. Waardoor je een 3D-vorm objecten kan worden gemaakt. Met SAR kunnen beelden worden geprojecteerd op een zeer grote oppervlakken en ook op de kleine oppervlakken, zoals een hoofd die gemaakt wordt van piepschuim of op je lichaam. 
+
+				Om SAR uit te voeren heb je programma MadMapper nodig. Er zijn verschillende programma’s voor dit. MadMapper is een gebruiksvriendelijke applicatie voor Projection Mapping. 
+
+				Als eerst heb ik de afbeeldingen opgezocht. Ik heb een paddenstoel en een gezicht opgezocht. Met de foto paddenstoel heb ik geprojecteerd op een wit ruimte. Daarna heb ik het gezicht geprojecteerd op een piepschuim die een vorm hebben van een hoofd. Ik heb daarna het gezicht aangepast zodat die gelijk aan het gezicht zou zijn.  
+				</p>
+				<div class="forFlex">
+					<figure class="vrAs">
+						<img class="imgBlueTurn" src="images/vrEnvironments/projectie/20190516_112020.jpg">
+						<img class="imgBlueTurn" src="images/vrEnvironments/projectie/20190516_110508.jpg">
+						<img src="images/vrEnvironments/projectie/voorbeeld.jpeg">
+					</figure>
+					<div class="vrVid">
+						<video width="20%" height="50%" controls>
+							<source src="images/vrEnvironments/projectie/20190516_103137.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<h2>Assignment: Unreal Engine for beginners</h2>
+				<p>Unreal Engine is een ontwikkelomgeving waarin je virtuele werelden kunt creëren. Het is momenteel de beste game-engine en is gebruikt om simulaties te maken. Voor deze opdracht heb ik het programma Epic Games Launcher geïnstalleerd.  
+
+				Ik heb bij de assignment Unreal Engine for beginners een banaan die kan draaien gemaakt. Hierbij heb ik veel hulp nodig van de klasgenoten. Ik vond het best wel lastig om te maken
+				</p>
+				<div class="vidVR">
+					<figure class="imgVR" style="width: 25%; height: 50%;" >
+						<img src="images/vrEnvironments/picEen.jpeg">
+					</figure>
+					<div style="width: 65%;">
+						<video width="50%" controls>
+							<source src="images/vrEnvironments/as1.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+				<h2>Assignment: Unreal Engine Blueprints</h2>
+				<p>Voor deze opdracht moet ik een game maken. Ik heb een blok gemaakt waarin die bananen opeet. Daarnaast hebben de bananen een ander kleur gegeven. Ook heb ik de baan langwerpig gemaakt. Hierbij heb ik ook hulp gevraagd aan mijn vrienden.</p>
+				<div class="vidBlue">
+					<figure class="imgBlue">
+						<img src="images/vrEnvironments/20190619_111423.jpg" >
+						<img src="images/vrEnvironments/20190619_111717.jpg" >
+						<img src="images/vrEnvironments/20190619_112057.jpg">
+						<img src="images/vrEnvironments/20190619_112202.jpg">
+						<img src="images/vrEnvironments/20190619_112220.jpg">
+						<img src="images/vrEnvironments/20190619_112326.jpg">
+					</figure>
+					<div class="vidPrints">
+						<video  width="50%" controls>
+							<source src="images/vrEnvironments/20190619_113407.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
 			</artikel>
 
 			<artikel id="arti" class="tabcontentMenu">
-				<h1>Assignment</h1>
-				<figure class="">
+				<div class="assigArti">
+					<h3>
+						Assignment 1: Write a program that draws three (or more) ellipses
+					</h3>
+					<p>Voor deze opdracht is de bedoeling dat ik drie of meer cirkels moet tekenen. Op de foto staat de codes op hoe ik heb gemaakt. De functie fill() geeft de kleur van de cirkels aan. De functie stroke() is de kleur van de randen van de cirkels. De functie ellipse() geeft de vormen van de cirkels aan.  </p>
+					<figure class="een">
+						<img src="images/computerVision/as1.png">
+					</figure>
+				</div>
+				<div class="assigArti">
+					<h3>
+						Assignment 2: Write a program that draw:
+						<ul>
+							<li>at least four different shapes</li>
+							<li>in various colors</li>
+							<li>at various locations</li>
+						</ul>
+					</h3>
+					<p>Hier moet ik vier verschillende vorm tekenen. De vormen heeft verschillende kleuren en de locatie van de vormen moeten variëren. De codes voor deze opdracht lijkt op van de eerste assignment. De functie strokeWeight() geeft de dikte van de randen. De functie line() geeft de lijnvorm aan. De functie triangle() geeft de vorm driehoek aan. De functie rect() geeft de vorm een rechthoek. De laatste functie quad() is een  vierkant.</p>
+					<figure class="een" >
+						<img src="images/computerVision/as2.png">
+					</figure>
+				</div>
+				<div class="assigArti">
+					<h3>
+						Assignment 3: Write a program that draws at least two different shapes, with various colors and make them interactive
+					</h3>
+					<p>Voor deze opdracht heb ik twee codes geschreven. De eerste code zorgt ervoor dat de ronde vorm de muis volgen. De tweede code geeft aan dat de lijnen de muis moet volgen. </p>
+					<figure class="een">
+						<img src="images/computerVision/as3/as3.1.png">
+						<img src="images/computerVision/as3/as3.2.png">
+					</figure>
+					<div class="vidAs3">
+						<video width="320" height="240" controls>
+							<source src="images/computerVision/as3/20190523_105713.mp4" type="video/mp4">
+						</video>
+						<video width="320" height="240" controls>
+							<source src="images/computerVision/as3/20190523_102215.mp4" type="video/mp4">
+						</video>
+						<video width="320" height="240" controls>
+							<source src="images/computerVision/as3/20190523_101031.mp4" type="video/mp4">
+						</video>
+					</div>
 					
-				</figure>
+				</div>
+				<div class="assigArti">
+					<h3>
+						Assignment CV1: the LiveCamTest deel 1
+					</h3>
+					<p>Deze opdracht heeft te maken met de liveCamTest. Eerst verschijnt er rechthoek op het scherm. Ik heb de code veranderd waardoor dit nu rondje is.</p>
+					<figure class="een">
+						<img src="images/computerVision/liv1.png">
+					</figure>
+				</div>
+				<div class="assigArti">
+					<h3>
+						Assignment CV2: the LiveCamTest deel 2
+					</h3>
+					<p>Ik heb ervoor gezorgd dat de ronde cirkel mijn neus volg en ik heb de kleur rood gegeven.</p>
+					<figure class="een">
+						<img src="images/computerVision/liv2.png">
+						<img src="images/computerVision/liv2.code.png">
+					</figure>
+				</div>
+				<div class="assigArti">
+					<h3>
+						Assignment CV3: the LiveCamTest deel 3
+					</h3>
+					<h3>Color</h3>
+					<p>Helaas kan ik deze assignment niet doen. De processor geeft een foutmelding aan. Ook heb ik met de docent erover gesproken. Hij heeft met mij meegekeken. Toen had hij een link gevonden waarop het staat waarom die niet doet. Hierbij heb ik ook aan de andere klasgenoten gevraagd. Bij hun deed die het ook niet. Klik hier voor de link.</p>
+					<figure class="een">
+						<img src="images/computerVision/color.png">
+					</figure>
+					<h3>Bright</h3>
+					<p>Hier heb ik de achtergrond code toegevoegd. Wanneer ik met mijn hand voor de camera doet dan verandert het scherm van de kleur. </p>
+					<div class="groupFlex">
+						<figure class="een">
+							<img src="images/computerVision/bright.png">
+						</figure>
+						<div class="vidCV3">
+							<video width="320" height="240" controls>
+								<source src="images/computerVision/brightVid.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+
+				</div>
+				<div class="assigArti">
+					<h3>
+						Assignment AR: Augmented
+					</h3>
+					<p>Hiervoor moet ik de afbeelding uitprinten of op de mobiel laten zien aan de camera van de laptop. Vervolgens komt een blauw blokje tevoorschijn. </p>
+					<figure class="een">
+						<img src="images/computerVision/asAR.png">
+					</figure>
+				</div>
+
 			</artikel>
 		</main>
 	</body>

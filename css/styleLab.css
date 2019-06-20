@@ -52,10 +52,30 @@ span {
 .tabcontentLab {
   float: left;
   padding: 0px 12px;
+  width: 70%;
   height: 300px;
   
   
 }
+.tabcontentLab figure{
+  display: flex;
+  flex-wrap: wrap;
 
+}
+img {
+  width: 50%;
+  height: 50%;
+}
+.vidDag6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgProduct img {
+  width: 50%;
+}
+.imgProduct {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 

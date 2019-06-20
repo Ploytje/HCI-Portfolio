@@ -53,6 +53,15 @@ span {
   padding: 0px 12px;
   height: 300px;
   float: left;
+  width: 70%;
+}
+.excursiePic {
+  display: flex;
+  flex-wrap: wrap;
+}
+.excursiePic img {
+  width: 50%;
+  height: 50%;
 }
 
 
